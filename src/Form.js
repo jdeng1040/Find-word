@@ -58,13 +58,14 @@ function Form() {
         </div>
         <div>
           <textarea
+            id="inputText"
             placeholder="Enter up to 200 words"
             value={inputText}
             onChange={handleChange}
             rows="7"
           />
         </div>
-        <p>Word Count: {wordCount}/200</p>
+        <p id="word-count">Word Count: {wordCount}/200</p>
         <button type="submit">Submit</button>
       </form>
       <div className="output">
