@@ -43,7 +43,10 @@ function Form() {
     );
   };
 
-  const wordCount = inputText.trim().split(/\s+/).length;
+  const wordCount = inputText
+    .trim()
+    .split(/\s+/)
+    .filter((word) => word !== "").length;
 
   return (
     <div>
